@@ -14,7 +14,11 @@
       "title": "つけ麺"
     }
   ],
-  "sweets": [],
+  "sweets": [
+    {
+      "title": "白玉だんご"
+    }
+  ],
   "memories": [
     {
       "title": "七福温泉 宇土の庄",
