@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>食べる｜暮らし方</title>
-<meta name="description" content="日常を豊かにする、いちばん身近な楽しみ。好きな食べもの、思い出に残っている食事、味わうこと、体を整える食事についての個人的なノート。">
+<meta name="description" content="日常を豊かにする、いちばん身近な楽しみ。好きな食べもの、スイーツ、思い出に残っている食事、味わうこと、体を整える食事についての個人的なノート。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
@@ -74,6 +74,7 @@
     <ul class="toc">
       <li><a href="#place">食の位置づけ</a></li>
       <li><a href="#like">好きな食べもの</a></li>
+      <li><a href="#sweets">スイーツ</a></li>
       <li><a href="#memories">思い出に残っている食事</a></li>
       <li><a href="#savor">味わう</a></li>
       <li><a href="#tune">整える</a></li>
@@ -95,16 +96,22 @@
     <h2>好きな食べもの</h2>
     <div data-list="like" data-style="chips"><p class="empty">読み込み中…</p></div>
   </section>
+  <section id="sweets">
+    <span class="sec-n">03</span>
+    <h2>スイーツ</h2>
+    <p class="note">甘いものは、食事とは別の楽しみとして分けて置く。</p>
+    <div data-list="sweets" data-style="chips"><p class="empty">読み込み中…</p></div>
+  </section>
 
   <section id="memories">
-    <span class="sec-n">03</span>
+    <span class="sec-n">04</span>
     <h2>思い出に残っている食事</h2>
     <p>もう行けなくなってしまったお店もある。だからこそ、名前だけでも残しておきたい。誰と、何を食べて、どう感じたのかは、思い出したときに書き足していく。</p>
     <div data-list="memories"><p class="empty">読み込み中…</p></div>
   </section>
 
   <section id="savor">
-    <span class="sec-n">04</span>
+    <span class="sec-n">05</span>
     <h2>味わう</h2>
     <p class="pull">何を食べるかと同じくらい、どう食べるか。</p>
     <p>スマホを見ながら、考えごとをしながらの「ながら食べ」では、せっかくのおいしさを半分しか受け取れていないのかもしれない。<a href="../mindfulness/practice-eating.html">マインドフル・イーティング</a>のように、色、香り、食感、温度に気づきながら食べる。全部の食事でなくていい。最初のひと口だけでも。</p>
@@ -112,7 +119,7 @@
   </section>
 
   <section id="tune">
-    <span class="sec-n">05</span>
+    <span class="sec-n">06</span>
     <h2>整える</h2>
     <p class="pull">数字を減らすことより、健康的な体になること。</p>
     <ul class="points">
@@ -123,7 +130,7 @@
   </section>
 
   <section id="wish">
-    <span class="sec-n">06</span>
+    <span class="sec-n">07</span>
     <h2>食べてみたいもの・行ってみたいお店</h2>
     <div data-list="wish"><p class="empty">読み込み中…</p></div>
   </section>
@@ -155,7 +162,7 @@
   </footer>
 </main>
 <script>
-// items.json の like / memories / wish を各欄に並べる
+// items.json の like / sweets / memories / wish を各欄に並べる
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function render(data){
   document.querySelectorAll("[data-list]").forEach(box => {
